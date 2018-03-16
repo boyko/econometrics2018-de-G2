@@ -65,8 +65,8 @@ summarise(ageGuessesGrouped,
           estAgeStd = sd(estAge)
           )
 
-# Conduct a test of the hypothesis that 
-# The expected error for Person 1 equals zero
+# H_0: Expected bias equals zero for Person 1 
+# H_1: Expected bias does not equal zero for Person 1
 
 person1Errors <- 
 person1Errors
@@ -74,10 +74,11 @@ person1Errors
 t.test(person1Errors, mu=0, conf.level = 0.95)
 
 
-# Conduct a test of the hypothesis that 
-# The expected error for Person 11 equals zero
+# H_0: Expected bias equals zero for Person 11
+# H_1: Expected bias does not equal zero for Person 11
+
 ageGuesses
-person11Errors <- ageGuesses[ageGuesses$personNr == "11", 'error']
+person11Errors <- 
 person11Errors
 
 t.test(person11Errors, mu=0, conf.level = 0.95)
