@@ -1,4 +1,4 @@
-# Install packages (packages can be installed )
+# Install required packages (packages only need to be installed once)
 # install.packages(c('tidyr', 'dplyr', 'ggplot2'))
 
 library(tidyr)
